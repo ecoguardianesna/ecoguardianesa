@@ -1,0 +1,61 @@
+/* Paleta de colores vivos */
+:root {
+    --primary: #007bff; /* Azul vibrante */
+    --secondary: #ffca28; /* Amarillo alegre */
+    --success: #28a745; /* Verde fresco */
+    --dark: #343a40; /* Oscuro para contraste */
+}
+
+/* Estilos generales */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f8f9fa;
+}
+
+header {
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2, h3 {
+    font-weight: bold;
+}
+
+.card {
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilos para posts */
+.post-content img,
+.post-content video {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.btn {
+    font-weight: bold;
+}
+
+/* Footer */
+footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Animaciones futuras */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Aplicar animaciones a imágenes o videos (ejemplo) */
+.post-content img,
+.post-content video {
+    animation: fadeIn 1s ease-in;
+}
