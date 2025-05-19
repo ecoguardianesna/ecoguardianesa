@@ -1,3 +1,6 @@
+/* Importar Montserrat */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
 /* Paleta de colores vivos */
 :root {
     --primary: #007bff; /* Azul vibrante */
@@ -8,7 +11,7 @@
 
 /* Estilos generales */
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     line-height: 1.6;
     background-color: #f8f9fa;
 }
@@ -18,7 +21,31 @@ header {
 }
 
 h1, h2, h3 {
-    font-weight: bold;
+    font-weight: 700;
+}
+
+/* Efecto neón para el título */
+.neonText {
+    color: #fff;
+    text-shadow: 
+        0 0 10px #ff006c, 
+        0 0 20px #ff006c, 
+        0 0 30px #ff006c, 
+        0 0 40px #ff417d, 
+        0 0 70px #ff417d, 
+        0 0 80px #ff417d, 
+        0 0 100px #ff417d, 
+        0 0 150px #ff417d;
+    font-weight: 100;
+    font-size: 90px;
+    text-align: center;
+}
+
+/* Ajustar tamaño en móviles */
+@media (max-width: 768px) {
+    .neonText {
+        font-size: 50px;
+    }
 }
 
 .card {
@@ -48,13 +75,12 @@ footer {
     width: 100%;
 }
 
-/* Animaciones futuras */
+/* Animaciones */
 @keyframes fadeIn {
     from { opacity: 0; }
     to { opacity: 1; }
 }
 
-/* Aplicar animaciones a imágenes o videos (ejemplo) */
 .post-content img,
 .post-content video {
     animation: fadeIn 1s ease-in;
