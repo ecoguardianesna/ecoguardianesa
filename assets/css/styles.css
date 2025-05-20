@@ -85,3 +85,15 @@ footer {
 .post-content video {
     animation: fadeIn 1s ease-in;
 }
+
+/* Ajuste para navbar-brand */
+.navbar-brand.neonText {
+    font-size: 1.5rem; /* Tamaño más pequeño para la navbar */
+    font-weight: 700;
+}
+
+@media (max-width: 768px) {
+    .navbar-brand.neonText {
+        font-size: 1.2rem;
+    }
+}
