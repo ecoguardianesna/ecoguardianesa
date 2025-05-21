@@ -24,27 +24,37 @@ h1, h2, h3 {
     font-weight: 700;
 }
 
-/* Efecto neón para el título */
+/* Efecto neón verde para el título */
 .neonText {
-    color: #fff;
+    color: #e6ffe6; /* Verde claro para el texto */
     text-shadow: 
-        0 0 10px #ff006c, 
-        0 0 20px #ff006c, 
-        0 0 30px #ff006c, 
-        0 0 40px #ff417d, 
-        0 0 70px #ff417d, 
-        0 0 80px #ff417d, 
-        0 0 100px #ff417d, 
-        0 0 150px #ff417d;
-    font-weight: 100;
-    font-size: 90px;
+        0 0 5px #00ff00, 
+        0 0 10px #00ff00, 
+        0 0 20px #00ff00, 
+        0 0 30px #33cc33, 
+        0 0 40px #33cc33;
+    font-weight: 400; /* Más ligero para un look moderno */
+    font-size: 80px; /* Ligeramente reducido para mejor proporción */
     text-align: center;
+}
+
+/* Ajuste para navbar-brand */
+.navbar-brand.neonText {
+    font-size: 1.5rem; /* Tamaño más pequeño para la navbar */
+    font-weight: 700;
+    text-shadow: 
+        0 0 5px #00ff00, 
+        0 0 10px #00ff00, 
+        0 0 15px #33cc33;
 }
 
 /* Ajustar tamaño en móviles */
 @media (max-width: 768px) {
     .neonText {
         font-size: 50px;
+    }
+    .navbar-brand.neonText {
+        font-size: 1.2rem;
     }
 }
 
@@ -84,16 +94,4 @@ footer {
 .post-content img,
 .post-content video {
     animation: fadeIn 1s ease-in;
-}
-
-/* Ajuste para navbar-brand */
-.navbar-brand.neonText {
-    font-size: 1.5rem; /* Tamaño más pequeño para la navbar */
-    font-weight: 700;
-}
-
-@media (max-width: 768px) {
-    .navbar-brand.neonText {
-        font-size: 1.2rem;
-    }
 }
